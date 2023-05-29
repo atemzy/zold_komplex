@@ -1,0 +1,124 @@
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body {
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+body,
+html {
+    height: 100vh !important;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #f0f0ee;
+    margin: 0;
+    padding: 0;
+}
+
+b {
+    border: solid 5px black;
+    border-radius: 10px;
+    background-color: black;
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    display: block;
+    top: 46%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.preview {
+    position: fixed;
+    width: 100%;
+    height: 100vh !important;
+}
+
+.preview img {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    margin: 0;
+    width: 100%;
+    height: 100vh !important;
+    display: inline-flex;
+}
+
+#pinContainer {
+    width: 100%;
+    height: 100vh !important;
+    position: relative;
+}
+
+img {
+    position: absolute;
+}
+
+.panel {
+    display: flex;
+    width: 100%;
+    height: 100vh !important;
+    position: absolute;
+}
+
+.right .imga {
+    left: 0;
+}
+
+.left .imga {
+    right: 0;
+}
+
+.imga {
+    position: relative;
+    width: 100%;
+}
+
+#pinMaster,
+#pinMaster2 {
+    position: relative;
+    width: 100%;
+}
+
+#pinMaster {
+    left: -55%;
+}
+
+#pinMaster2 {
+    margin-left: 55% !important;
+}
+
+.first {
+    z-index: 10000;
+}
+
+.left b {
+    right: 0%;
+}
+
+.third {}
+
+.sec {
+    z-index: 1000;
+
+}

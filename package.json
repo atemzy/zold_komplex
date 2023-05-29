@@ -1,0 +1,22 @@
+{
+  "name": "zold_komplex",
+  "version": "1.0.0",
+  "description": "Beadandó!",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "-"
+  },
+  "keywords": [
+    "zold",
+    "komplex"
+  ],
+  "author": "Attila Pápa, Milán Bán, Márk Farkas",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
