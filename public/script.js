@@ -2,7 +2,7 @@ TweenLite.defaultEase = Linear.easeNone;
 let controller = new ScrollMagic.Controller();
 let tl = new TimelineMax();
 let letPercent = 110
-let manyslider = 4
+let manyslider = 9
 for (let i = 0; i < manyslider; i++) {
   if (i < 10) {
     tl.from(`section.panel.left.a0${i}`, 1, { xPercent: letPercent });

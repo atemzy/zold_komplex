@@ -121,7 +121,19 @@ img {
 }
 
 .a04 {
-    z-index: 1;
+    z-index: 9;
+}
+
+.a05 {
+    z-index: 8;
+}
+
+.a06 {
+    z-index: 7;
+}
+
+.a07 {
+    z-index: 6;
 }
 
 .a02 {

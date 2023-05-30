@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const publicFold = 'public'
-const port = 4000;
+const port = 2000;
 app.use(express.urlencoded({ extended: true })); // this is to handle URL encoded data
 app.use(express.static(publicFold));
 
