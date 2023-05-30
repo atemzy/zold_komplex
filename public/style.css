@@ -108,7 +108,7 @@ img {
     margin-left: 55% !important;
 }
 
-.first {
+.a01 {
     z-index: 10000;
 }
 
@@ -116,9 +116,15 @@ img {
     right: 0%;
 }
 
-.third {}
+.a03 {
+    z-index: 10;
+}
 
-.sec {
+.a04 {
+    z-index: 1;
+}
+
+.a02 {
     z-index: 1000;
 
 }

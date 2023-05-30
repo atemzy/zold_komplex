@@ -2,15 +2,19 @@ TweenLite.defaultEase = Linear.easeNone;
 let controller = new ScrollMagic.Controller();
 let tl = new TimelineMax();
 let letPercent = 110
-tl.from("section.panel.left.first", 1, { xPercent: letPercent });
-tl.from("section.panel.left.sec", 1, { xPercent: letPercent });
-tl.from("section.panel.left.third", 1, { xPercent: letPercent });
-
+let manyslider = 4
+for (let i = 0; i < manyslider; i++) {
+  if (i < 10) {
+    tl.from(`section.panel.left.a0${i}`, 1, { xPercent: letPercent });
+  } else {
+    tl.from(`section.panel.left.a${i}`, 1, { xPercent: letPercent });
+  }
+}
 
 new ScrollMagic.Scene({
   triggerElement: "#pinMaster",
   triggerHook: "onLeave",
-  duration: "300%"
+  duration: `${manyslider * 100}%`
 })
   .setPin("#pinMaster")
   .setTween(tl)
@@ -23,15 +27,18 @@ new ScrollMagic.Scene({
   .addTo(controller);
 
 let tl2 = new TimelineMax();
-tl2.from("section.panel.right.first", 1, { xPercent: -letPercent });
-tl2.from("section.panel.right.sec", 1, { xPercent: -letPercent });
-tl2.from("section.panel.right.third", 1, { xPercent: -letPercent });
-
+for (let i = 0; i < manyslider; i++) {
+  if (i < 10) {
+    tl2.from(`section.panel.right.a0${i}`, 1, { xPercent: -letPercent });
+  } else {
+    tl2.from(`section.panel.right.a${i}`, 1, { xPercent: -letPercent });
+  }
+}
 
 new ScrollMagic.Scene({
   triggerElement: "#pinMaster2",
   triggerHook: "onLeave",
-  duration: "300%"
+  duration: `${manyslider * 100}%`
 })
   .setPin("#pinMaster2")
   .setTween(tl2)
