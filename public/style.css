@@ -39,9 +39,9 @@ b {
     background-color: black;
     font-size: 32px;
     color: white;
-    position: absolute;
+    width: fit-content;
+    position: relative;
     display: block;
-    top: 46%;
     text-align: center;
     text-transform: uppercase;
 }
@@ -108,35 +108,51 @@ img {
     margin-left: 55% !important;
 }
 
-.a01 {
-    z-index: 10000;
-}
 
 .left b {
     right: 0%;
 }
 
-.a03 {
-    z-index: 10;
+.left {
+    text-align: -webkit-right;
 }
 
-.a04 {
-    z-index: 9;
+.desc {
+    position: absolute;
+    width: inherit;
+    top: 100%;
+    transition: all ease-in 0.5s;
 }
 
-.a05 {
-    z-index: 8;
+.active {
+    top: 46%;
 }
 
-.a06 {
-    z-index: 7;
-}
-
-.a07 {
-    z-index: 6;
+.a01 {
+    z-index: 100;
 }
 
 .a02 {
-    z-index: 1000;
+    z-index: 99;
 
+}
+
+.a03 {
+    z-index: 98;
+}
+
+.a04 {
+    z-index: 97;
+}
+
+.a05 {
+    z-index: 96;
+}
+
+.a06 {
+    z-index: 95;
+}
+
+.a07 {
+    z-index: 94;
 }
