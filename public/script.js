@@ -72,7 +72,7 @@ window.addEventListener("scroll", (event) => {
 });
 function setActiveDesc(num) {
   let elements = 0
-  console.log(direction)
+  console.log("hány óra kell, mire elérjek anyádhoz?" + direction)
   if (num < 10) {
     if (direction == 1) {
       elements = document.getElementsByClassName("a0" + (num - 0.5))
@@ -93,7 +93,7 @@ function setActiveDesc(num) {
       if (children[o].classList.contains("desc")) {
         children[o].classList.add("active")
         activated.push(children[o])
-        console.log("hozzáad")
+        console.log("visszaadja")
       }
     }
   }
@@ -101,6 +101,6 @@ function setActiveDesc(num) {
 function torles() {
   for (let b = 0; b < activated.length; b++) {
     activated[b].classList.remove("active")
-    console.log("elvesz")
+    console.log("elveszi a szüzességem")
   }
 }
